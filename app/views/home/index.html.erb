@@ -1,0 +1,9 @@
+<h1>public Articles</h1>
+<p>
+Please sign in to add your articles and to see your articles.<br> It is a public articles spot to share </p>
+<% if !author_signed_in? %>
+<p> sign in to add articles </p>
+<% end %>
+<% if author_signed_in? %>
+<%= link_to "Add Articles", users_path %>
+<% end %>
